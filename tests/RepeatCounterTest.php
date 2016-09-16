@@ -8,6 +8,7 @@
             $test_RepeatCounter = new RepeatCounter;
             $word = "I";
             $sentence = "I.";
+            $test_score = 1;
             //Act
             $word_count = $test_RepeatCounter->countRepeats($word, $sentence);
             //Assert
@@ -91,16 +92,16 @@
             $this->assertEquals(1, $word_count);
         }
 
-        function test_find_word_in_contraction() {
-            //Arrange
-            $test_RepeatCounter = new RepeatCounter;
-            $word = "you";
-            $sentence = "You're my favorite cat.";
-            //Act
-            $word_count = $test_RepeatCounter->countRepeats($word, $sentence);
-            //Assert
-            $this->assertEquals(1, $word_count);
-        }
+        // function test_find_word_in_contraction() {
+        //     //Arrange
+        //     $test_RepeatCounter = new RepeatCounter;
+        //     $word = "you";
+        //     $sentence = "You're my favorite cat.";
+        //     //Act
+        //     $word_count = $test_RepeatCounter->countRepeats($word, $sentence);
+        //     //Assert
+        //     $this->assertEquals(1, $word_count);
+        // }
 
     }
 ?>
