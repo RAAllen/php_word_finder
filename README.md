@@ -16,13 +16,50 @@
 
 ## Program Specifications
 
-* _._
-* Example Word Input: .
-* Example Sentence Input: .
-* Example Output: .
+* _The program will allow users to search for a one letter word that occurs once in a one word sentence they input._
+* Example Word Input: I.
+* Example Sentence Input: I.
+* Example Output: "I" occurs 1 time in the sentence "I.".
 
+* _The program will allow users to search for a multiple letter word that occurs once in a one word sentence they input._
+* Example Word Input: Cats!
+* Example Sentence Input: Cats!
+* Example Output: "Hi" occurs 1 time in the sentence "Cats!".
 
+* _The program will allow users to search for a one letter word that occurs once in a multiple word sentence they input._
+* Example Word Input: I.
+* Example Sentence Input: I love cats.
+* Example Output: "I" occurs 1 time in the sentence "I love cats.".
 
+* _The program will allow users to search for a multiple letter word that occurs once in a multiple word sentence they input._
+* Example Word Input: cats.
+* Example Sentence Input: My favorite animals are cats.
+* Example Output: "cats" occurs 1 time in the sentence "My favorite animals are cats.".
+
+* _The program will allow users to search for a one letter word that occurs more than once in a multiple word sentence they input._
+* Example Word Input: a.
+* Example Sentence Input: I went to a pet store to get a bag of cat food.
+* Example Output: "a" occurs 2 times in the sentence "I went to a pet store to get a bag of cat food.".
+
+* _The program will allow users to search for a multiple letter word that occurs more than once in a multiple word sentence they input._
+* Example Word Input: the.
+* Example Sentence Input: I think the easiest way to make friends with the neighborhood cats is to give them the finest tuna treats.
+* Example Output: "the" occurs 3 times in the sentence "I think the easiest way to make friends with the neighborhood cats is to give them the finest tuna treats.".
+
+* _The program will ignore case when searching for a word._
+* Example Word Input: cats.
+* Example Sentence Input: Cats are totally awesome.
+* Example Output: "cats" occurs 1 time in the sentence "Cats are totally awesome.".
+
+* _The program will treat contractions as words._
+* Example Word Input: you're.
+* Example Sentence Input: You're my favorite cat.
+* Example Output: "you're" occurs 1 time in the sentence "You're my favorite cat.".
+
+* _The program will be able to match a whole word that is part of a contraction._
+* Example Word Input: you.
+* Example Sentence Input: You're my favorite cat.
+* Example Output: "you" occurs 1 time in the sentence "You're my favorite cat.".
 
 ## Support and Contact Details
 
