@@ -73,4 +73,4 @@ _This program utilizes HTML, CSS, PHP, PHPUnit, Twig, Composer and Bootstrap_
 
 *This program is licensed under the MIT license*
 
-Copyright (c) 2016 **_{Rebecca Allen}_**
+Copyright (c) 2016 **_Rebecca Allen_**
