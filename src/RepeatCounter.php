@@ -1,27 +1,27 @@
 <?php
+
     class RepeatCounter {
 
         public $word;
         public $sentence;
-        public $word_count;
+        public $word_count = 0;
 
         function countRepeats($word, $sentence)
         {
-            return $this->word_count;
-            {
-                $word_count = 0;
-                $lowered_word = strtolower($word);
-                $lowered_sentence = strtolower($sentence);
-                $split_sentence = explode(' ', $lowered_sentence);
-                    foreach($split_sentence as $sentence_word)
+            $string = $sentence;
+            $lowered_word = strtolower($word);
+            $lowered_sentence = strtolower($sentence);
+            $replaced_sentence = str_replace([',', '.', '!', '?', ':', ';', '"'], " ", $lowered_sentence);
+            $split_sentence = explode(' ', $replaced_sentence);
+                foreach($split_sentence as $sentence_word)
+                {
+                    if($sentence_word === $lowered_word)
                     {
-                        if($sentence_word === $lowered_word)
-                        {
-                            $this->word_count += 1;
-                        }
+                        $this->word_count++;
                     }
-                    return $this->word_count;
-            }
+                }
+                return $this->word_count;
         }
     }
+
 ?>

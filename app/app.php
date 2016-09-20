@@ -8,11 +8,13 @@
 
     $app->register(new Silex\Provider\TwigServiceProvider(), array('twig.path' => __DIR__.'/../views'));
 
-    $app->get("/", function() use($app) {
+    $app->get("/", function() use($app)
+    {
         return $app['twig']->render('home.html.twig');
     });
 
-    $app->post('/results', function() use ($app) {
+    $app->post('/results', function() use ($app)
+    {
       $word = $_POST['user-word'];
       $sentence = $_POST['user-sentence'];
       $new_RepeatCounter = new RepeatCounter;

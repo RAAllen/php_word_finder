@@ -52,7 +52,7 @@
             //Arrange
             $test_RepeatCounter = new RepeatCounter;
             $word = "a";
-            $sentence = "I went to a pet store to get a bag of cat food..";
+            $sentence = "I went to a pet store to get a bag of cat food.";
             //Act
             $word_count = $test_RepeatCounter->countRepeats($word, $sentence);
             //Assert
