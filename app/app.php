@@ -13,7 +13,7 @@
         return $app['twig']->render('home.html.twig');
     });
 
-    $app->post('/results', function() use ($app)
+    $app->post('/results', function() use($app)
     {
       $word = $_POST['user-word'];
       $sentence = $_POST['user-sentence'];
