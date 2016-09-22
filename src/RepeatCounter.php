@@ -22,6 +22,7 @@
                 }
                 return $this->word_count;
         }
+
     }
 
 ?>

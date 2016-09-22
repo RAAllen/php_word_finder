@@ -13,8 +13,11 @@
         </div>
         <div class="col-xs-6">
           <h3>Here are the results of your query:<h3>
-    
-
+          <ul>
+            <li>Your Word:{{ word }}</li>
+            <li>Your Sentence:{{ sentence }}</li>
+            <li>Number of Word Occurances:{{ word_count }}</li>
+          </ul>
           <h3>Search for another word:</h3>
           {% include "partials/form.html" %}
         </div>
