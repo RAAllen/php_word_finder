@@ -9,19 +9,29 @@
       </div>
 
       <div class="row">
-        <div class="col-xs-3">
+        <div class="col-xs-6">
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h3>Here are the results of your query:<h3>
+            </div>
+            <div class="panel-body">
+              <ul>
+                <li><label>Your Word:</label>   {{ word }}</li>
+                <li><label>Your Sentence:</label>   {{ sentence }}</li>
+                <li><label>Number of Word Occurances:</label>   {{ word_count }}</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="col-xs-6">
-          <h3>Here are the results of your query:<h3>
-          <ul>
-            <li>Your Word:{{ word }}</li>
-            <li>Your Sentence:{{ sentence }}</li>
-            <li>Number of Word Occurances:{{ word_count }}</li>
-          </ul>
-          <h3>Search for another word:</h3>
-          {% include "partials/form.html" %}
-        </div>
-        <div class="col-xs-3">
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h3>Search for another word:</h3>
+            </div>
+            <div class="panel-body">
+              {% include "partials/form.html" %}
+            </div>
+          </div>
         </div>
       </div>
 
